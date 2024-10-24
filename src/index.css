@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Sora', 'sans-serif';
+  }
+}
+
+@layer components {
+  .con {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+}
