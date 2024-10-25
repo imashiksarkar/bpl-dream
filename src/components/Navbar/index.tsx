@@ -1,8 +1,12 @@
+import { formatUSD } from '../../utils/formatCurrency'
+
 interface IProp {
   coins?: number
 }
 
 const Navbar = ({ coins = 0 }: IProp) => {
+  const formattedCoins = formatUSD.format(coins)
+
   return (
     <nav>
       <div className='con flex flex-col lg:flex-row gap-10 items-center justify-between py-12'>
@@ -24,19 +28,17 @@ const Navbar = ({ coins = 0 }: IProp) => {
             <a href='#'>Schedules</a>
           </li>
           <li>
-            <a
+            <span
               className='flex items-center gap-4 text-neutral-900 font-semibold py-4 px-5
-              border rounded-xl
-              '
-              href='#'
+              border rounded-xl'
             >
-              <span>{coins} Coins</span>
+              <span>${formattedCoins} Coins</span>
               <img
                 className='h-5 aspect-square'
                 src='/coin.png'
                 alt='coin-icon'
               />
-            </a>
+            </span>
           </li>
         </ul>
       </div>

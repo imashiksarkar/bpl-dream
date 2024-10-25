@@ -1,0 +1,222 @@
+[
+  {
+    "id": "player001",
+    "name": "Virat Kohli",
+    "age": 34,
+    "type": "Batsman",
+    "nationality": "India",
+    "rating": 92,
+    "batingHand": "Right",
+    "price": 2000000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player002",
+    "name": "Steve Smith",
+    "age": 33,
+    "type": "Batsman",
+    "nationality": "Australia",
+    "rating": 89,
+    "batingHand": "Right",
+    "price": 1800000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729875278/ph-hosting/steve-smith.jpg"
+  },
+  {
+    "id": "player003",
+    "name": "Joe Root",
+    "age": 32,
+    "type": "Batsman",
+    "nationality": "England",
+    "rating": 88,
+    "batingHand": "Right",
+    "price": 1600000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player004",
+    "name": "Babar Azam",
+    "age": 29,
+    "type": "Batsman",
+    "nationality": "Pakistan",
+    "rating": 90,
+    "batingHand": "Right",
+    "price": 1900000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player005",
+    "name": "Kane Williamson",
+    "age": 33,
+    "type": "Batsman",
+    "nationality": "New Zealand",
+    "rating": 87,
+    "batingHand": "Right",
+    "price": 1550000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player006",
+    "name": "Jasprit Bumrah",
+    "age": 30,
+    "type": "Bowler",
+    "nationality": "India",
+    "rating": 91,
+    "batingHand": "Right",
+    "price": 2100000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player007",
+    "name": "Pat Cummins",
+    "age": 31,
+    "type": "Bowler",
+    "nationality": "Australia",
+    "rating": 89,
+    "batingHand": "Right",
+    "price": 1800000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player008",
+    "name": "Kagiso Rabada",
+    "age": 28,
+    "type": "Bowler",
+    "nationality": "South Africa",
+    "rating": 88,
+    "batingHand": "Right",
+    "price": 1650000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player009",
+    "name": "Trent Boult",
+    "age": 33,
+    "type": "Bowler",
+    "nationality": "New Zealand",
+    "rating": 86,
+    "batingHand": "Left",
+    "price": 1500000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player010",
+    "name": "Ben Stokes",
+    "age": 31,
+    "type": "All-Rounder",
+    "nationality": "England",
+    "rating": 91,
+    "batingHand": "Left",
+    "price": 2200000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player011",
+    "name": "Shakib Al Hasan",
+    "age": 35,
+    "type": "All-Rounder",
+    "nationality": "Bangladesh",
+    "rating": 87,
+    "batingHand": "Left",
+    "price": 1750000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player012",
+    "name": "Rashid Khan",
+    "age": 25,
+    "type": "Bowler",
+    "nationality": "Afghanistan",
+    "rating": 90,
+    "batingHand": "Right",
+    "price": 1950000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player013",
+    "name": "Hardik Pandya",
+    "age": 29,
+    "type": "All-Rounder",
+    "nationality": "India",
+    "rating": 88,
+    "batingHand": "Right",
+    "price": 2000000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player014",
+    "name": "Andre Russell",
+    "age": 36,
+    "type": "All-Rounder",
+    "nationality": "West Indies",
+    "rating": 85,
+    "batingHand": "Right",
+    "price": 1700000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player015",
+    "name": "Quinton de Kock",
+    "age": 30,
+    "type": "Wicketkeeper",
+    "nationality": "South Africa",
+    "rating": 89,
+    "batingHand": "Left",
+    "price": 1800000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player016",
+    "name": "Jos Buttler",
+    "age": 32,
+    "type": "Wicketkeeper",
+    "nationality": "England",
+    "rating": 90,
+    "batingHand": "Right",
+    "price": 1900000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player017",
+    "name": "David Warner",
+    "age": 36,
+    "type": "Batsman",
+    "nationality": "Australia",
+    "rating": 88,
+    "batingHand": "Left",
+    "price": 1700000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player018",
+    "name": "AB de Villiers",
+    "age": 39,
+    "type": "Batsman",
+    "nationality": "South Africa",
+    "rating": 91,
+    "batingHand": "Right",
+    "price": 2050000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player019",
+    "name": "Chris Gayle",
+    "age": 42,
+    "type": "Batsman",
+    "nationality": "West Indies",
+    "rating": 87,
+    "batingHand": "Left",
+    "price": 1600000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  },
+  {
+    "id": "player020",
+    "name": "Malinga",
+    "age": 40,
+    "type": "Bowler",
+    "nationality": "Sri Lanka",
+    "rating": 86,
+    "batingHand": "Right",
+    "price": 1750000,
+    "img": "https://res.cloudinary.com/imashiksarkar/image/upload/v1729874236/ph-hosting/virat-kohli.webp"
+  }
+]

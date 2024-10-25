@@ -16,7 +16,15 @@ const Hero = ({ handleClaimCredit }: IProp) => {
           Beyond Boundaries Beyond Limits
         </p>
 
-        <Button onClick={() => handleClaimCredit(5000)} />
+        <Button
+          className='mt-8'
+          variant='gradient'
+          outlined
+          rounded
+          onClick={() => handleClaimCredit(5_00_000)}
+        >
+          Claim Free Credit
+        </Button>
       </section>
     </div>
   )
