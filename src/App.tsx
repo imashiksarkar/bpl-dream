@@ -47,7 +47,60 @@ const App = () => {
             </div>
           </div>
         </div>
-        <br />
+        <div className='con mt-12 flex flex-col items-center'>
+          <figure className='logo'>
+            <img className='h-36' src='/logo-footer.png' alt='logo' />
+          </figure>
+          <div className='footer__details mt-16 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_2fr_auto] gap-6'>
+            <div className='details-1 about'>
+              <h1 className='text-lg font-semibold'>About Us</h1>
+              <p className='text-gray-400 leading-7 mt-4'>
+                We are a passionate team dedicated to providing the best
+                services to our customers.
+              </p>
+            </div>
+            <div className='details-2 md:place-self-end lg:place-self-center'>
+              <h1 className='text-lg font-semibold'>Quick Links</h1>
+              <nav className='text-gray-400 leading-7 mt-4'>
+                <ul className='list-disc ms-6'>
+                  <li>
+                    <a href='#'>Home</a>
+                  </li>
+                  <li>
+                    <a href='#'>Services</a>
+                  </li>
+                  <li>
+                    <a href='#'>About</a>
+                  </li>
+                  <li>
+                    <a href='#'>Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div className='details-3 md:col-span-2 lg:col-span-1'>
+              <h1 className='text-lg font-semibold'>Subscribe</h1>
+              <p className='text-gray-400 leading-7 mt-2'>
+                Subscribe to our newsletter for the latest updates.
+              </p>
+              <form className='flex flex-col md:flex-row gap-2 md:gap-0 md:rounded-xl overflow-hidden mt-4'>
+                <input
+                  className='p-5 rounded-xl md:rounded-none basis-4/5 text-black outline-none'
+                  name='email'
+                  type='email'
+                  placeholder='Enter your email'
+                />
+                <Button
+                  className='basis-1/5 p-2 rounded-xl md:rounded-none'
+                  type='submit'
+                  variant='gradient'
+                >
+                  Subscribe
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
         <br />
         <br />
         <br />
