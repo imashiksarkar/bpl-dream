@@ -122,6 +122,7 @@ const Players = ({ addCoin, subtractCoin }: IProp) => {
           <SelectedPlayerList
             selectedPlayers={selectedPlayers}
             onDeleteSelected={handleDeleteSelected}
+            onAddMoreClick={handleSelection}
           />
         )}
       </section>

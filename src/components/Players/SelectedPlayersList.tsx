@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react'
 import { IPlayer } from '../../services/playerApi'
 import Button from '../ui/Button'
 
@@ -9,11 +10,13 @@ export type SelectedPlayers = Pick<
 interface ISelectedProps {
   selectedPlayers: SelectedPlayers[]
   onDeleteSelected: (args: { playerId: string; price: number }) => void
+  onAddMoreClick: (event: MouseEvent<HTMLButtonElement>) => void
 }
 
 const SelectedPlayerList = ({
   selectedPlayers,
   onDeleteSelected,
+  onAddMoreClick,
 }: ISelectedProps) => {
   return (
     <div className='flex flex-col gap-4 mt-6'>
@@ -41,6 +44,24 @@ const SelectedPlayerList = ({
           </Button>
         </div>
       ))}
+
+      {selectedPlayers.length > 0 && (
+        <Button
+          className='w-max mt-6'
+          variant='secondary'
+          rounded
+          onClick={onAddMoreClick}
+          name='Available'
+        >
+          Add more players
+        </Button>
+      )}
+
+      {!selectedPlayers.length && (
+        <div className='w-full h-9 flex items-center justify-center text-red-500'>
+          <h1>No players selected! ⚠</h1>
+        </div>
+      )}
     </div>
   )
 }
