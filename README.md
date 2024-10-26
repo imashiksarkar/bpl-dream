@@ -1,4 +1,4 @@
-# [BPL Dream](https://bpl-dream1.netlify.app) - Choose your dream players
+# [BPL Dream](https://bpl-dream.ashiksarkar.xyz) - Choose your dream players
 
 **BPL Dream:** A sleek, minimalistic fantasy cricket platform dedicated to the Bangladeshi & Indian, where fans can create, manage, and track their dream teams.
 
