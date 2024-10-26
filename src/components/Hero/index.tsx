@@ -1,3 +1,5 @@
+import { Bounce, toast } from 'react-toastify'
+
 import Button from '../ui/Button'
 
 interface IProp {
@@ -5,6 +7,21 @@ interface IProp {
 }
 
 const Hero = ({ handleClaimCredit }: IProp) => {
+  const handleClick = () => {
+    toast.success('Coins added to account.', {
+      position: 'top-left',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+      transition: Bounce,
+    })
+    handleClaimCredit(5_00_000)
+  }
+
   return (
     <div className='con'>
       <section className='hero bg-neutral-900 flex flex-col items-center justify-center p-8 md:p-16 rounded-2xl bg-shadow bg-cover bg-no-repeat bg-center'>
@@ -21,7 +38,7 @@ const Hero = ({ handleClaimCredit }: IProp) => {
           variant='gradient'
           outlined
           rounded
-          onClick={() => handleClaimCredit(5_00_000)}
+          onClick={handleClick}
         >
           Claim Free Credit
         </Button>

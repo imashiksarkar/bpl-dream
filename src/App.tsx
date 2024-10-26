@@ -1,8 +1,12 @@
+import { useEffect } from 'react'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import Players from './components/Players/inedx'
+import Players from './components/Players'
 import Button from './components/ui/Button'
 import useCoinState from './hooks/useCoinState'
+
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   const { coin, addCoin, subtractCoin } = useCoinState(0)
@@ -108,6 +112,8 @@ const App = () => {
           </p>
         </div>
       </footer>
+
+      <ToastContainer />
     </>
   )
 }

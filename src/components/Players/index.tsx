@@ -3,6 +3,7 @@ import { fetchPlayers, type IPlayer } from '../../services/playerApi'
 import ButtonGroup from '../ui/ButtonGroup'
 import AvailablePlayerList from './AvailablePlayersList'
 import SelectedPlayerList, { type SelectedPlayers } from './SelectedPlayersList'
+import { Bounce, toast } from 'react-toastify'
 
 interface IProp {
   addCoin: (coinAmount: number) => void
@@ -23,13 +24,47 @@ const Players = ({ addCoin, subtractCoin }: IProp) => {
 
   const handleChoosePlayer = (player: SelectedPlayers) => {
     try {
-      if (selectedPlayers.find((sp) => sp.id === player.id)) return
-      if (selectedPlayers.length >= 6) return
+      if (selectedPlayers.find((sp) => sp.id === player.id)) {
+        return toast.error('Player already selected.', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light',
+          transition: Bounce,
+        })
+      }
+      if (selectedPlayers.length >= 6) {
+        return toast.warn('Maximum players selected.', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light',
+          transition: Bounce,
+        })
+      }
 
       subtractCoin(player.price)
       setSelectedPlayers((prev) => [...prev, player])
     } catch (error) {
-      console.log(error)
+      return toast.error('Not enough coins.', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'light',
+        transition: Bounce,
+      })
     }
   }
 
