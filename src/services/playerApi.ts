@@ -11,6 +11,8 @@ export interface IPlayer {
 }
 
 export const fetchPlayers = async () => {
-  const res = await fetch('/db/players.json')
+  const res = await fetch(
+    'https://res.cloudinary.com/imashiksarkar/raw/upload/v1729952683/ph-hosting/players_data.json'
+  )
   return (await res.json()) as IPlayer[]
 }
