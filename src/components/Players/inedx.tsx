@@ -51,7 +51,7 @@ const Players = ({ addCoin, subtractCoin }: IProp) => {
     <div className='con mt-12'>
       <section className='players'>
         {/* Header */}
-        <header className='flex items-center justify-between'>
+        <header className='flex flex-col md:flex-row gap-4 items-center justify-between'>
           {selected === 'Available' ? (
             <h1 className='text-2xl font-bold'>Available Players</h1>
           ) : (
