@@ -53,6 +53,17 @@ const Players = ({ addCoin, subtractCoin }: IProp) => {
 
       subtractCoin(player.price)
       setSelectedPlayers((prev) => [...prev, player])
+      return toast.success(`Player ${player.name} is selected.`, {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'light',
+        transition: Bounce,
+      })
     } catch (error) {
       return toast.error('Not enough coins.', {
         position: 'top-right',
