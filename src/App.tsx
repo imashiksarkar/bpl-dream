@@ -101,10 +101,12 @@ const App = () => {
             </div>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        <hr className='border-gray-500 w-full mt-16' />
+        <div className='con'>
+          <p className='text-gray-500 py-8 text-center'>
+            &copy;{new Date().getFullYear()} softyMart All Rights Reserved.
+          </p>
+        </div>
       </footer>
     </>
   )
