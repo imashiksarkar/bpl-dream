@@ -8,8 +8,8 @@ const Navbar = ({ coins = 0 }: IProp) => {
   const formattedCoins = formatUSD.format(coins)
 
   return (
-    <nav>
-      <div className='con flex flex-col lg:flex-row gap-10 items-center justify-between py-12'>
+    <nav className='backdrop-blur-sm fixed top-0 z-30 w-full border-b border-gray-50/40'>
+      <div className='con flex flex-col lg:flex-row gap-10 items-center justify-between py-6'>
         <a className='logo' href='/'>
           <img className='w-20' src='/logo.png' alt='logo' />
         </a>

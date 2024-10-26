@@ -17,7 +17,7 @@ const App = () => {
         <Navbar coins={coin} />
       </header>
 
-      <main>
+      <main className='mt-[29rem] md:mt-64 lg:mt-36'>
         <Hero handleClaimCredit={addCoin} />
         <Players addCoin={addCoin} subtractCoin={subtractCoin} />
       </main>
