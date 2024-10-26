@@ -22,6 +22,8 @@ export interface IProp {
 }
 
 const PlayerBox = ({ player, onChoosePlayer }: IProp) => {
+  const rating = ((player.rating / 100) * 5).toFixed(1)
+
   return (
     <div className='card border p-4 rounded-xl' key={player.id}>
       <figure className='player-image w-full aspect-[6/4] rounded-lg overflow-hidden'>
@@ -52,7 +54,10 @@ const PlayerBox = ({ player, onChoosePlayer }: IProp) => {
       </div>
 
       <div className='mt-5 flex flex-col gap-4 font-semibold'>
-        <h1 className='font-bold'>Rating</h1>
+        <div className='flex items-center justify-between'>
+          <h1 className='font-bold'>Rating</h1>
+          <p className='text-gray-500 font-normal'>{rating}</p>
+        </div>
         <div className='flex items-center justify-between'>
           <p>Bating Hand:</p>
           <p className='text-gray-500 font-normal'>{player.batingHand}</p>
